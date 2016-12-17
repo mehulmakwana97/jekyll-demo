@@ -1,0 +1,75 @@
+-
+  header: Languages in Sydney
+  color: #007a87
+  image: sydneyUni
+  text: Sydney University delivers over 40,000 enrolments each year in their short course programme.
+  link: sydney_uni
+
+-
+  header: Acting around Australia
+  color: #007a87
+  image: knee
+  text: NIDA is Australia's most famous acting school, now bringing short courses to everyone.
+  link: nida
+
+-
+  header: Electrified in Perth
+  color: #007a87
+  image: lightning
+  text: Western Power send electricity to 25% of Australia and deliver the training to do it safely.
+  link: western_power
+
+-
+  header: RSA at Central
+  color: #007a87
+  image: bar
+  text: Central Station is teaming with visitors. Coffee School trains thousands of them every month.
+  link: coffee
+
+-
+  header: Permaculture in Byron
+  color: #007a87
+  image: byron
+  text: Byron Bay Community College has the best sustainable growing courses in the country.
+  link: byron
+
+-
+  header: Studying in the Shire
+  color: #007a87
+  image: lightbulb
+  text: SGSCC exports high quality education to CRICOS students from around the world.
+  link: sgscc
+
+-
+  header: Dance in Perth
+  color: #007a87
+  image: dance
+  text: Juan Rando takes beginners and professional and imbues with with the joy of Latin dance.
+
+-
+  header: Paint in Leichhardt
+  color: #007a87
+  image: paint
+  text: ArtEst enriches thousands of kids with a love of art.
+  link: artest
+
+-
+  header: White card in Riverina
+  color: #007a87
+  image: fence
+  text: Western Riverina Community College prepare construction workers for a career.
+  link: riverina
+
+-
+  header: Uni entry in Newcastle
+  color: #007a87
+  image: Newcastle
+  text: Newcastle University delivers innovative learning and flexible pathways to higher education.
+  link: newcastle
+
+-
+  header: English in Blacktown
+  color: #007a87
+  image: language
+  text: MCC launches a new life for immigrants with English training under the AMEP programme.
+  link: macquarie_community_college

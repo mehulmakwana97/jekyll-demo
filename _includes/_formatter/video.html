@@ -1,0 +1,47 @@
+
+{% assign _id = include.id | replace: '#','' %}
+{% assign _type = include.type ? include.type : 'youtube' %}
+{% assign _type_modal = include.type-modal ? include.type-modal : _type %}
+{% assign _default_video = include.background-video-id ? include.background-video-id : include.video-id %}
+
+<div class="embed-responsive embed-responsive-1by1 video-container">
+    <div class="video-mask">
+      <img src="/assets/img/content/video-bg.png">
+    </div>
+    <div class="clearfix code-display">
+      <div class="show-highlighted-text"></div>
+    </div>
+
+    {% if _type == 'vimeo' %}
+      <iframe src="https://player.vimeo.com/video/{{ _default_video }}?autoplay=1&loop=1&portrait=0&badge=0" width="{{ include.width }}" height="{{ include.height }}" class="embed-responsive-item" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    {% elsif _type == 'default' %}
+      <video src="{{ include.background-src }}" id="video-obj-{{ _id }}" preload="auto" loop="" webkit-playsinline="" style="position: absolute; height: 100%; width: auto" autoplay=""></video>
+    {% else %}
+      <iframe width="{{ include.width }}" height="{{ include.height }}" src="https://www.youtube.com/embed/{{ _default_video }}?autoplay=1&loop=1&rel=0&playlist={{ include.video-id }}" class="embed-responsive-item" frameborder="0" volume="0"></iframe>
+    {% endif %}
+
+    {% if include.id %}
+        <div id="video-play-{{ include.video-id }}" type="button" class="btn btn-lg overlay-video-btn" data-toggle="modal" data-target="#modal-{{ _id }}">
+          <i class="aicon icon-play"></i>
+        </div>
+    {% endif %}
+</div>
+
+{% if include.id %}
+<div class="full-video-modal modal fade" id="modal-{{ _id }}" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" data-id="video-{{ _id }}">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="embed-responsive embed-responsive-1by1 full-video">
+            <div class="video-frame" id="video-{{ _id }}" data-video-id="{{ include.video-id }}" data-video="{{ _type_modal }}"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endif %}

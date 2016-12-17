@@ -1,0 +1,35 @@
+<header class="site-header">
+  <nav class="navbar">
+    <div class="container">
+      <div class="clearfix pull-sm-left mobile-nav">
+        <a class="site-title navbar-brand" href="{{site.baseurl}}/" title="{{ site.title }}">
+          <img src="{{ site.baseurl }}/assets/img/icons/logo.png" />
+        </a>
+        {% if page.url contains '/features' %}
+          <button class="navbar-toggler hidden-xs-up pull-xs-right" type="button" data-toggle="collapse" data-target="#navbar-header-toggle" aria-controls="#navbar-header-toggle">
+            &#9776;
+          </button>
+        {% endif %}
+      </div>
+
+      <div class="navbar-header navbar-toggleable-xs pull-sm-left" id="navbar-header-toggle">
+        <ul class="clearfix nav navbar-nav">
+          {% assign main_menu = 'Features|/features/, Pricing|/pricing/, Contact Us|/about/contact/' | split: ', ' %}
+          {% for topmenu in main_menu %}
+            {% assign menu_item = topmenu | split: '|' %}
+            {% assign nav_active = '' %}
+
+            {% menu_check page_url:'{{ page.url }}', menu_url:'{{ menu_item[1] }}' %}
+
+            {% if page.menu_check %}
+              {% assign nav_active = ' active-item' %}
+            {% endif %}
+            <li class="nav-item{{ nav_active }}">
+              <a href="{{ site.baseurl }}{{ menu_item[1] }}" class="nav-link">{{ menu_item[0] }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>

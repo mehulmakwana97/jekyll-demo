@@ -1,0 +1,26 @@
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+baseurl:
+title: ish group
+email: info@ish.com.au
+description: ish onCourse. The most comprehensive and easy to use, marketing and enrolment system available.
+url: "https://www.ish.com.au"
+encoding: utf-8
+
+markdown: kramdown
+exclude: ['README.md', 'Gemfile.lock', 'Gemfile']
+
+kramdown:
+  auto_ids: true # Auto-generate ID's for headings
+
+sass:
+  style: compressed
+  sass_dir: assets/css/_sass
+
+exclude:
+  - assets/js/*
+
+gems:
+  - jekyll-sitemap
+  - jekyll-redirect-from

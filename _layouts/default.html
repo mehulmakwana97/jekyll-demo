@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  {% assign block = 'site-page' %}
+
+  {% if layout.block %}
+    {% assign block = layout.block %}
+  {% endif %}
+
+  {% assign sidebar_default = 'hide-sidebar' %}
+  {% if page.url contains '/features' %}
+    {% assign sidebar_default = 'show-sidebar' %}
+  {% endif %}
+
+  <body id="{{ block }}" data-spy="scroll" data-target="#sidebar-navbar" data-offset="67" class="{{ sidebar_default }} page-{{ page.title | replace: ' ','-' | replace: '--','-' | downcase }}">
+
+    {% include header.html %}
+
+    <div class="page-content">
+      <div class="clearfix container">
+        <aside id="content">
+          {{ content | toc_generate }}
+        </aside>
+      </div>
+    </div>
+
+    {% include sidebar.html %}
+    {% include footer.html %}
+
+  </body>
+{% if page.footer %}
+  {% for snippet in page.footer %}
+    {% include {{snippet}} %}
+  {% endfor %}
+{% endif %}
+{% include analytics.html %}
+</html>

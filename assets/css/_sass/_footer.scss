@@ -1,0 +1,125 @@
+footer {
+    position: relative;
+    z-index: 9;
+    background: $footer-bg;
+    color: $footer-text-color;
+
+    // the following two lines fix the OSX bug of overly bolding text on dark background
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+
+    padding: 0 0 15px;
+    @include _font-size(12);
+    @include responsive($media-small) {
+        @include _font-size(16);
+    }
+    .footer-top {
+        background: $secondaryColor;
+        text-align: center;
+        padding: 39.5px 0;
+        margin-bottom: 60px;
+        @include responsive($media-small) {
+            padding: 49.5px 0;
+            margin-bottom: 80px;
+        }
+        @include responsive($media-tablet) {
+            padding: 59.5px 0;
+            margin-bottom: 100px;
+        }
+        h3 {
+            font-size: 38px;
+            color: #fbf9f0;
+            @include responsive($media-small) {
+                margin-right: 35px;
+                margin-bottom: 0;
+                line-height: 1.4;
+            }
+            @include responsive($media-tablet) {
+                font-size: 58px;
+            }
+        }
+        h3, a {
+            @include responsive($media-small) {
+                display: inline-block;
+                vertical-align: middle;
+            }
+        }
+    }
+
+    .footer-bottom {
+        >.row .row > div {
+            margin-bottom: 12px;
+        }
+        h4 {
+            @include _font-size(25);
+            color: $white;
+            margin-bottom: 26px;
+            @include responsive($media-small) {
+                @include _font-size(34);
+            }
+            >span, img {
+                display: inline-block;
+                vertical-align: middle;
+            }
+            >span {
+                margin-right: 5px;
+            }
+        }
+        .form-newsletter {
+            color: $white;
+            .form-control {
+                background: none;
+                color: $white;
+
+                &:focus {
+                    border-color: $primaryColor;
+                }
+            }
+            .btn-warning {
+                padding: 13px 31.77px;
+            }
+        }
+    }
+
+    ul {
+        list-style-type: none;
+        margin-left: 0;
+        li {
+            margin-bottom: 3px;
+        }
+    }
+
+    a, a:visited {
+        color: $white;
+        &:hover {
+            color: $brand-color;
+            text-decoration: none;
+        }
+    }
+    .col-md-24 {
+        .btn-secondary {
+            color: $brand-color;
+        }
+        .col-xs-24 {
+            float: none;
+            display: inline-block;
+            vertical-align: top;
+            width: 100%;
+        }
+        @include responsive($media-small) {
+            .col-sm-12 {
+                width: 49.49%;
+            }
+        }
+        @include responsive($media-small) {
+            .col-md-6 {
+                width: 24.49%;
+            }
+        }
+        @include responsive($media-desktop) {
+            .col-lg-6 {
+                width: 24.49%;
+            }
+        }
+    }
+}

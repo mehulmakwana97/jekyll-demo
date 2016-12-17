@@ -1,0 +1,91 @@
+---
+- title: Self hosted
+  more: Download, install and manage on your own servers. No user limits.
+  plans:
+    - true
+    - true
+    - true
+    - true
+- title: Cloud hosted
+  more: Managed cloud hosting. Two concurrent users included with more at $120 per month.
+  plans:
+    - false
+    - true
+    - true
+    - more: Managed cloud hosting. Two concurrent users included with more at $120 per month. New version upgrades according to your own custom schedule.
+- title: SMS
+  plans:
+    - false
+    - more: Send messages at 15 cents
+    - more: Send messages at 13 cents
+    - more: Send messages at 11 cents
+- title: Credit card payments
+  plans:
+    - false
+    - more: Processing Mastercard, Visa and Amex payments at 45c each
+    - more: Processing Mastercard, Visa and Amex payments at 42c (first 50 free)
+    - more: Processing Mastercard, Visa and Amex payments at 39c (first 100 free)
+- title: Student & tutor portal
+  more: Access to timetables, attendance marking and communication tools. USI verification and AVETMISS collection.
+  plans:
+    - false
+    - true
+    - true
+    - true
+- title: Membership
+  more: Create and sell memberships to allow special discounts or varied pricing for individuals or employers and their staff
+  plans:
+    - false
+    - true
+    - true
+    - true
+- title: Advanced authorisation
+  more: All users of onCourse have their own login password. This feature allows you to define what specific part of the system they are allowed to access, including integration with your LDAP directory.
+  plans:
+    - false
+    - false
+    - true
+    - true
+- title: Advanced finance
+  more: Create gift certificates, product packages and many other type of vouchers. Track detailed budgets per class and monitor profitability.
+  plans:
+    - false
+    - false
+    - true
+    - true
+
+- title: VET Fee HELP
+  more: All your reporting requirements around courses by application and the government reporting needed to use the VET Fee HELP system
+  plans:
+    - false
+    - false
+    - true
+    - true
+
+- title: Payroll
+  more: Set tutor rates, assign tutors to classes, confirm attendance and variations ready for processing through your payroll software
+  plans:
+    - false
+    - false
+    - false
+    - true
+
+- title: Basic workflow
+  more: Use scripts, templates and workflows provided with onCourse
+  plans:
+    - true
+    - true
+    - true
+    - title: Advanced and custom workflow
+      more: Use the onCourse DSL and programming language to map onCourse to your own custom workflow.
+
+- title: Support
+  plans:
+    - title: Forum only support
+      more: Community support through the public forum. ish staff will post there from time to time.
+    - title: Forum and email support
+      more: 1 support contact, 5 day response
+    - title: Forum, email and phone support
+      more: 2 support contacts, 3 day response
+    - title: Forum, email, phone, web tracking portal. Priority support.
+      more: <strong>3</strong> support contacts, <strong>1</strong> day response

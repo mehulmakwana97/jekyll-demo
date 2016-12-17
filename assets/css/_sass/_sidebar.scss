@@ -1,0 +1,53 @@
+/**
+*
+* sidebar.scss
+*
+* Contains all the styles of sidebar contents
+*/
+
+/**
+ * Following all the styles handles sidebar of page
+ * Posibility to make sidebar enable to left/right
+ */
+$sidebar-left: '' !default;
+$sidebar-right: '' !default;
+
+@if $sidebar-left == on or $sidebar-right == on {
+	//Content on left side
+	$content: left;
+	//Sidebar on right side
+	$sidebar: right;
+	//Main content width
+	$sidebar-content-width: $content-width;
+	//Sidebar width
+	$m-sidebar-width: $sidebar-width;
+
+	@if $sidebar-left == on { //Enable left sidebar
+		$content: right;
+		$sidebar: left;
+	}
+	@else if $sidebar-right == on { //Enable right sidebar
+		$content: left;
+		$sidebar: right;
+	}
+
+	#content {
+		float: $content;
+		width: 100%;
+
+		// Responsive media for tablet
+		@include responsive($media-tablet) {
+			width: $sidebar-content-width;
+		}
+	}
+	#sidebar {
+		float: $sidebar;
+		width: 100%;
+
+		// Responsive media for tablet
+		@include responsive($media-tablet) {
+			width: $m-sidebar-width;
+			min-width: 160px;
+		}
+	}
+}

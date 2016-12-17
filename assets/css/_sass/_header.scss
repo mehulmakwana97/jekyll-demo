@@ -1,0 +1,180 @@
+/**
+*
+* header.scss
+*
+* Contains styles of site header
+*
+*/
+
+.site-header {
+    min-height: 86px;
+    background: $site-header-background;
+    @include _transition(all 0.2s ease-in-out);
+    margin-top: 70px;
+    .navbar {
+        padding: 0;
+        .navbar-toggler {
+            margin-top: 8px;
+            margin-right: 27px;
+        }
+        &.sticky {
+            top: -200px;
+            @include _transition(all 0.5s ease);
+            padding: 5px 0;
+            background: $white;
+            visibility: hidden;
+            &.scroll-active {
+                top: 0;
+                visibility: visible;
+            }
+            .navbar-toggler {
+                margin-right: 0;
+            }
+        }
+        .navbar-header {
+            margin: 0 -15px;
+            margin-top: 8px;
+            //background: $grey-color-light;
+            @include responsive($media-xsmall) {
+                background: none;
+                margin: 0;
+                margin-right: 40px;
+            }
+            > ul {
+                &.nav {
+                    margin: 0;
+                    padding: 10px 20px;
+                    @include responsive($media-small) {
+                        padding: 8px 20px 0;
+                    }
+                    li {
+                        position: relative;
+                        >a {
+                            position: relative;
+                            color: $nav-item-color;
+                            font-size: $nav-item-font-size;
+
+                            &.has-child {
+                                &::after {
+                                    margin-left: 0.3em;
+                                    display: inline-block;
+                                    vertical-align: middle;
+                                    @include arrow('top', 0.3em, '', relative);
+                                }
+                            }
+
+                            &::after {
+                                background: $primaryColor;
+                                content: "";
+                                position: absolute;
+                                left: 0;
+                                right: 0;
+                                height: 2px;
+                                bottom: 3px;
+                                width: 100%;
+                                transform-origin: left center;
+                                -webkit-transform: scaleX(0);
+                                transform: scaleX(0);
+                                transition: -webkit-transform .3s cubic-bezier(.82,0,.12,1);
+                                transition: transform .3s cubic-bezier(.82,0,.12,1);
+                                transition: transform .3s cubic-bezier(.82,0,.12,1),-webkit-transform .3s cubic-bezier(.82,0,.12,1);
+                            }
+                        }
+
+                        &.active-item a {
+                            color: #000;
+
+                            &:hover {
+                                color: #000;
+                            }
+                        }
+
+                        &:hover {
+                            >a {
+                                color: $menu-color-hover;
+                                &::after {
+                                   transform: scaleX(1);
+                                }
+                            }
+                        }
+                        &:hover {
+                            ul.children {
+                                display: block;
+                            }
+                        }
+                        ul {
+                            li {
+                                &.nav-item {
+                                    float: none;
+                                    margin-left: 0;
+                                    a {
+                                        color: $white;
+                                        white-space: normal;
+                                        &:hover {
+                                            color: $children-item-color-hover;
+                                        }
+                                    }
+                                }
+                            }
+                            &.children {
+                                position: absolute;
+                                top: 100%;
+                                left: 0;
+                                z-index: 1000;
+                                display: none;
+                                float: left;
+                                min-width: 160px;
+                                padding: 5px 0;
+                                margin: 0;
+                                font-size: 1rem;
+                                color: #373a3c;
+                                text-align: left;
+                                list-style: none;
+                                background-color: $black;
+                                background-color: rgba($black, 0.8);
+                                background-clip: padding-box;
+                                border: 1px solid rgba(0,0,0,0.15);
+                                border-radius: .25rem;
+                                @include responsive($media-xsmall) {
+                                    width: 245px;
+                                }
+                                li {
+                                    &.nav-item {
+                                        .dropdown-divider {
+                                            margin: 0;
+                                        }
+                                        a {
+                                            &::after {
+                                                content: none;
+                                            }
+                                        }
+                                    }
+                                    >ul.children {
+                                        position: relative;
+                                        margin-left: 15px;
+                                        background: none;
+                                        border: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .site-title {
+        font-size: 33px;
+        font-weight: 300;
+        line-height: 56px;
+        margin-bottom: 0;
+        float: left;
+        @include _transition(all 0.2s ease-in-out);
+        text-decoration: none;
+
+        &,
+        &:visited {
+            color: $grey-color-dark;
+        }
+    }
+}

@@ -1,0 +1,312 @@
+/**
+*
+* menu.scss
+*
+* Contains styles of sidebar menu
+*
+*/
+$smenu-width-small: 250px;
+$smenu-width: 55%;
+$smenu-width-tablet: 42%;
+$smenu-width-desktop: 30%;
+
+@mixin side-menu-active {
+    .page-content #content {
+        @include responsive($media-tablet) {
+            padding-right: 10%;
+            width: 58%;
+        }
+        @include responsive($media-desktop) {
+            padding-right: 6%;
+            width: 70%;
+        }
+    }
+    #sidebar-menu {
+        width: $smenu-width-small;
+        @include responsive($media-small) {
+            width: $smenu-width;
+        }
+        @include responsive($media-tablet) {
+            width: $smenu-width-tablet;
+        }
+        @include responsive($media-desktop) {
+            width: $smenu-width-desktop;
+        }
+        .menu-wrapper .slimScrollDiv {
+            overflow: visible !important;
+        }
+        .menu-wrapper {
+            .navbar-toggler {
+                left: -51px;
+                z-index: 99;
+                @include responsive($media-small) {
+                    left: -36px;
+                }
+            }
+        }
+    }
+}
+
+body {
+    &#home-page {
+        #sidebar-menu {
+            display: none;
+        }
+    }
+    &.sidebar-active {
+        @include side-menu-active;
+    }
+    &.show-sidebar {
+        @include responsive($media-tablet) {
+            @include side-menu-active;
+        }
+        .container {
+            padding-right: $container-padding-right;
+            @include responsive($media-small) {
+                padding-right: 45px;
+            }
+            @include responsive($media-tablet) {
+                padding-right: 15px;
+            }
+        }
+    }
+}
+
+#sidebar-menu {
+    background: $sidebar-menu-bg;
+    text-align: left;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    width: 24px;
+    padding: 0px;
+    z-index: 99;
+    @include responsive($media-small) {
+        width: 30px;
+    }
+    @include responsive($media-tablet) {
+        z-index: 9;
+    }
+    @include _transition(all 0.2s ease-in-out);
+    &.scroll-active {
+        @include responsive($media-xsmall) {
+            .navbar-wrapper {
+                padding-top: 36px;
+            }
+            .menu-wrapper .navbar-toggler {
+                top: 1px;
+            }
+        }
+    }
+    .menu-wrapper {
+        position: relative;
+        .navbar-toggler {
+            display: block;
+            position: absolute;
+            left: -55px;
+            //background: $sidebar-menu-bg;
+            color: $white;
+            top: 78px;
+            border-radius: 0;
+            outline: 0 none;
+            @include _transition(all 0.2s ease-in-out);
+            @include responsive($media-small) {
+                left: -43px;
+            }
+            @include responsive($media-tablet) {
+                display: none;
+            }
+        }
+        .slimScrollDiv {
+            overflow: hidden !important;
+        }
+    }
+    .navbar-wrapper {
+        overflow: visible !important;
+        position: fixed;
+        //right: 0;
+        left: auto;
+        width: $smenu-width-small !important;
+        padding: 65px 0 0 25px;
+        @include responsive($media-small) {
+            padding-left: 80px;
+            width: $smenu-width !important;
+        }
+        @include responsive($media-tablet) {
+            padding-left: 50px;
+            width: $smenu-width-tablet !important;
+        }
+        @include responsive($media-desktop) {
+            width: $smenu-width-desktop !important;
+        }
+    }
+    .navbar {
+        padding: 10px 0 85px;
+        &.navbar-header::after {
+            content: "";
+            position: absolute;
+            top: -200%;
+            bottom: -200%;
+            background: $background-color;
+            left: -25px;
+            width: 24px;
+            display: block;
+            @include responsive($media-small) {
+                left: -80px;
+                width: 40px;
+            }
+            @include responsive($media-tablet) {
+                background: transparent;
+                left: -100px;
+                width: 50px;
+            }
+        }
+        ul.nav {
+            margin: 0;
+            font-size: 12px;
+            li.nav-item {
+                float: none;
+                display: block;
+                margin-left: 0;
+                position: relative;
+                a {
+                    display: block;
+                    color: $white;
+                    border-bottom: 2px solid transparent;
+                    text-decoration: none;
+                    @include _transition(all 0.2s ease-in-out);
+                    &:hover {
+                        color: $white;
+                    }
+                    &.dropdown-item {
+                        background: none;
+                        &.active {
+                            background: none;
+                            color: $white;
+                            &::before {
+                                border-color: $white;
+                            }
+                        }
+                    }
+                }
+                >.item-index {
+                    position: absolute;
+                    color: #929292;
+                    line-height: 1.5;
+                    left: -20px;
+                    z-index: 1;
+                    top: 1px;
+                    font-size: 12px;
+                    padding: 0;
+                    margin: 0;
+                    @include responsive($media-small) {
+                        left: -70px;
+                    }
+                    @include responsive($media-tablet) {
+                        left: -90px;
+                    }
+                    &::after {
+                        position: absolute;
+                        content: "";
+                        bottom: -5px;
+                        height: 1px;
+                        width: 35px;
+                        left: 0;
+                        background: #a8a8a8;
+                        background: rgba(#a8a8a8, 0.2);
+                        @include responsive($media-small) {
+                            width: 60px;
+                        }
+                        @include responsive($media-tablet) {
+                            width: 80px;
+                        }
+                    }
+                }
+                &:hover {
+                    >.item-index {
+                        color: $black;
+                        &::after {
+                            background: #757575;
+                            background: rgba(#757575, 0.2);
+                        }
+                    }
+                }
+                &.has-child, &.active-item {
+                    >a, >.item-index {
+                        color: $primaryColor;
+                        &:focus, &:hover {
+                            color: darken($primaryColor, 10%);
+                        }
+                    }
+                    >.item-index {
+                        &::after {
+                            background: $primaryColor;
+                        }
+                    }
+                }
+                >ul {
+                    padding: 10px;
+                    margin: 0;
+                    background: $sidebar-menu-bg;
+                    position: relative;
+                    >li {
+                        line-height: 2.8em;
+
+                        >a {
+                            font-size: 18px;
+                            padding: 5px 20px 5px 0;
+                            display: block;
+                            font-weight: 300;
+                            color: #aaaaaa;
+                            text-decoration: none;
+                            position: relative;
+                            @include responsive($media-small) {
+                                font-size: 22px;
+                                padding: 5px 20px;
+                            }
+                        }
+                        >.item-index {
+                            left: -50px;
+                            @include responsive($media-small) {
+                                left: -80px;
+                            }
+                            @include responsive($media-tablet) {
+                                left: -100px;
+                            }
+                        }
+                    }
+                    &#sidebar-navbar {
+                        >li {
+                            line-height: 1.5em;
+
+                            >a {
+                                font-size: 15px;
+                                text-overflow: ellipsis;
+                                overflow: hidden;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        >ul.nav {
+            >li.nav-item {
+                >a {
+                    font-size: 15px;
+                    padding: 8px 20px;
+                    line-height: 20px;
+                    background: $sidebar-menu-bg;
+                    color: $primaryColor;
+                    @include responsive($media-small) {
+                        font-size: 18px;
+                    }
+                    &:focus, &:hover {
+                        color: darken($primaryColor, 10%);
+                    }
+                }
+
+            }
+        }
+    }
+}

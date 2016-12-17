@@ -1,0 +1,26 @@
+<li class="col-lg-6 col-sm-12 col-xs-24">
+<a href="{{ site.baseurl }}/clients/{{ include.panel.link }}">
+<span class="clearfix home-site-item">
+    {% if include.panel.header %}
+        <span class="clearfix block-header">
+            <span style="background: {{ include.panel.color | default '#black'}}">{{ include.panel.header }}</span>
+        </span>
+    {% endif %}
+
+    <span class="clearfix block-image">
+        {% if include.panel.image %}
+            <img src="{{ site.baseurl }}/assets/img/front_tall/{{ include.panel.image }}.jpg"
+            srcset="{{ site.baseurl }}/assets/img/front_tall/{{ include.panel.image }}@2x.jpg" />
+        {% endif %}
+    </span>
+
+    <span class="clearfix block-content">
+        <span class="block-title {{ include.panel.title-class | default 'h2' }}">{{ include.panel.title }}</span>
+        <span class="clearfix block-text">
+            <p>{{ include.panel.text }}</p>
+            <p class="block-helped"><i class="glyphicon glyphicon-search"></i> View case study</p>
+        </span>
+    </span>
+</span>
+</a>
+</li>

@@ -1,0 +1,37 @@
+---
+---
+
+@charset "utf-8";
+
+$basePath: '{{ site.baseurl }}';
+
+@import "settings";
+/* Bootstrap */
+
+//@import "bootstrap-sprockets";
+@import "bootstrap/bootstrap";
+//@import "bootstrap/bootstrap-flex";
+@import "bootstrap/bootstrap-grid";
+@import "bootstrap-slider/bootstrap-slider";
+
+@import "bootstrap-toggle";
+@import "jquery.bxslider";
+@import "jquery.datetimepicker";
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "mixins",
+        "icons",
+        "glyphicon",
+        "icheck/skins/flat/flat",
+        "base",
+        "menu",
+        "sidebar",
+        "layout",
+        "page",
+        "header",
+        "pricing",
+        "footer",
+        "syntax-highlighting",
+        "callouts"
+;

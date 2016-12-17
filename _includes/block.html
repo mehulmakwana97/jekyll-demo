@@ -1,0 +1,17 @@
+{% assign pos = ' ct-left' %}
+{% if position %}
+    {% assign pos = position | prepend: ' ct-' %}
+{% endif %}
+<div class="clearfix page-full-bl{{ pos }}" id="{{ id }}">
+    {% if img %}
+    <div class="image-wrap">
+        <img src="{{ img }}" />
+    </div>
+    {% endif %}
+    <div class="clearfix bl-text-wrap">
+        <h4>{{ title }}</h4>
+        <div class="text-content">
+            {{ content }}
+        </div>
+    </div>
+</div>

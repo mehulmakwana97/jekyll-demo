@@ -1,0 +1,269 @@
+/**
+*
+* page.scss
+*
+* Contains styles of site pages
+*
+*/
+$page-block-height: 440px;
+$page-block-height-tablet: 640px;
+#internal-page,
+#page-comparison,
+#site-page {
+    .page-content {
+        padding: 57px 0 20px;
+        header.post-header {
+            h1 {
+                color: $primaryColor;
+            }
+        }
+    }
+}
+
+#internal-page {
+    .page-content {
+        padding: 57px 0 0;
+        /* .post-content {
+            >h5 {
+                visibility: hidden;
+                font-size: 0;
+                margin: 0;
+            }
+        } */
+    }
+    &.sidebar-active {
+        .page-full-bl {
+            .image-wrap {
+                @include responsive($media-small) {
+                    width: 70%;
+                }
+            }
+        }
+    }
+}
+
+#page-comparison {
+    .table {
+        margin-bottom: 35px;
+
+        @include responsive($media-tablet) {
+            margin-bottom: 50px;
+        }
+
+        @include responsive($media-desktop) {
+            margin-bottom: 60px;
+        }
+
+        tr {
+            th, td {
+                width: 25%;
+                font-size: 13px;
+                @include responsive($media-small) {
+                    font-size: 16px;
+                }
+                &:first-child {
+                    width: 50%;
+                }
+            }
+        }
+    }
+}
+
+.page-full-bl {
+    //position: relative;
+    background: #fbf9f0;
+    min-height: $page-block-height-tablet;
+    .image-wrap {
+        @include responsive-image();
+        height: $page-block-height;
+        left: 0;
+        right: 0;
+        position: relative;
+        width: auto;
+        margin-left: -15px;
+        margin-right: -15px;
+        @include responsive($media-tablet) {
+            position: absolute;
+            height: $page-block-height-tablet;
+            width: 100%;
+            margin: 0;
+        }
+    }
+    &.ct-first {
+        min-height: 370px;
+        height: auto;
+        .bl-text-wrap {
+            max-width: none;
+            h4 {
+                @include responsive($media-tablet) {
+                    float: left;
+                    margin-right: 5%;
+                    width: 30%;
+                }
+            }
+            .text-content {
+                @include responsive($media-tablet) {
+                    float: left;
+                    width: 38%;
+                }
+            }
+        }
+    }
+     &.ct-default {
+        border-top: 1px solid #ebe9e2;
+        min-height: 370px;
+        height: auto;
+
+        &:first-child {
+            border-top: none;
+        }
+        .bl-text-wrap {
+            max-width: none;
+            h4 {
+                @include responsive($media-tablet) {
+                    float: left;
+                    margin-right: 5%;
+                    width: 30%;
+                }
+            }
+            .text-content {
+                @include responsive($media-tablet) {
+                    float: left;
+                    width: 60%;
+                }
+            }
+        }
+    }
+    &.ct-right {
+        .bl-text-wrap {
+            margin-top: 20px;
+            @include responsive($media-tablet) {
+                margin-top: 130px;
+                margin-left: 450px;
+            }
+        }
+        .image-wrap {
+            position: relative;
+            height: auto;
+            margin: 15px 0 0;
+            @include responsive($media-tablet) {
+                position: absolute;
+                height: $page-block-height-tablet;
+                margin-left: -15px;
+            }
+            img {
+                //left: 0;
+                top: 0;
+                min-width: auto;
+                min-height: auto;
+                //margin: 0 auto;
+                //@include _transform(none);
+                @include responsive($media-tablet) {
+                    top: 50%;
+                    @include _transform(translateY(-50%) translateX(-114.2%));
+                    margin: 0;
+                }
+            }
+        }
+    }
+    &.ct-left {
+        .image-wrap {
+            &::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                right: 0;
+                width: 70%;
+                height: 100%;
+                z-index: 1;
+                /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+50&1+0,0+100 */
+                background: -moz-linear-gradient(left,  rgba(255,255,255,1) 0%, rgba(255,255,255,0.5) 50%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+                background: -webkit-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(255,255,255,0.5) 50%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+                background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0.5) 50%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */
+
+            }
+        }
+        .bl-text-wrap {
+            /* background: #e2e1d9;
+            background: rgba($black, 0.1);
+            @include responsive($media-tablet) {
+                background: none;
+                color: $text-color;
+            } */
+        }
+    }
+    .bl-text-wrap {
+        padding: 20px 0;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        position: relative;
+        z-index: 2;
+
+        @include responsive($media-tablet) {
+            max-width: 400px;
+            margin-top: 80px;
+            margin-bottom: 60px;
+        }
+
+        @include responsive($media-desktop) {
+            max-width: 400px;
+            margin-top: 130px;
+            margin-bottom: 100px;
+        }
+    }
+}
+
+.row--spaced {
+    border-top: 1px solid #ebe9e2;
+    padding: 50px 0 40px;
+
+    &:first-child {
+        margin-top: 50px;
+    }
+
+    &.no-border {
+        border: none;
+    }
+
+    @include responsive($media-tablet) {
+        padding: 80px 0 70px;
+
+        &:first-child {
+            margin-top: 80px;
+        }
+    }
+
+    @include responsive($media-desktop) {
+        padding: 100px 0 90px;
+
+        &:first-child {
+            margin-top: 100px;
+        }
+    }
+}
+
+.row--spaced-bottom {
+    padding: 0 0 40px;
+
+    @include responsive($media-tablet) {
+        padding: 0 0 70px;
+
+    }
+
+    @include responsive($media-desktop) {
+        padding: 0 0 90px;
+    }
+}
+
+#map {
+
+    @include responsive($media-tablet) {
+        margin-top: 20px;
+    }
+
+    @include responsive($media-desktop) {
+        margin-top: 30px;
+    }
+}
+

@@ -1,0 +1,17 @@
+---
+- name: Student Management System
+  link: /features/student_management_system
+- name: Compliance
+  link: /features/compliance
+- name: Financial
+  link: /features/financial
+- name: Marketing
+  link: /features/marketing
+- name: Portal
+  link: /features/portal
+- name: Timetables
+  link: /features/timetables
+- name: Website
+  link: /features/website
+- name: Feature list
+  link: /features/full-feature-list

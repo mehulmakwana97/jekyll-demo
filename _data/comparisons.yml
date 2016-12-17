@@ -1,0 +1,1237 @@
+---
+- name: Attribute
+  features:
+    - compliance.avetmiss
+    - compliance.reporting.general
+    - compliance.reporting.customise
+    - compliance.certificate
+    - compliance.attendance 
+    - financial.budgeting
+    - hosting.cloud
+    - staff.multi.os
+    - marketing.communication
+    - marketing.marketing
+    - staff.employee
+    - staff.hr 
+    - staff.training
+    - staff.bulk.assign
+    - staff.templates
+    - staff.lms
+    - students.portal
+    - timetables.rooms
+    - timetables.max.class
+  reporting:
+    - Excel
+    - Text 
+    - HTML
+    - PDF
+    - RTF
+  pricing: Not listed on website
+  pros: |
+    - MS Outlook look and feel
+    - Employee management 
+    - Interface customisation 
+    - Audit trail for data changes
+    - Certificate issuing and automation
+  cons: |
+    - MS Outlook look and feel
+    - Limited financial and marketing features
+    - No tutor portal 
+    - No website integration  
+    - Only AVETMISS Compliant in South Australia
+  oncourse: |
+    - Absolute website integration for courses and classes
+    - AVETMISS Compliant nationally
+    - Advanced financial and marketing features 
+    - Fully integrated tutor portal
+
+- name: Audit Answers
+  features:
+    - compliance.states
+    - compliance.avetmiss
+    - compliance.reporting.general
+    - compliance.reporting.customise
+    - compliance.rto.management
+    - compliance.usi.capible
+    - compliance.cricos
+    - financial.budgeting
+    - hosting.cloud
+    - marketing.email.alerts
+    - marketing.marketing
+    - marketing.sms.functionalit
+    - marketing.survey
+    - staff.document.management
+    - version.control
+    - students.assessment
+    - tutors.assessment
+  reporting:
+  pricing: Not listed on website
+  pros: |
+    - Online assessment submission
+    - Document management and version control
+  cons: |
+    - Limited financial features
+    - No website integration
+    - No tutor portal
+  oncourse: |
+    - Absolute website integration for courses and classes
+    - Advanced financial features 
+    - Fully integrated tutor portal
+
+- name: aXcelerate
+  features:
+    - compliance.states
+    - compliance.avetmiss
+    - compliance.reporting.general
+    - compliance.reporting.customise
+    - compliance.rto.management
+    - compliance.usi.capible
+    - compliance.vetfee
+    - financial.accounting
+    - financial.budgeting
+    - financial.discounting
+    - financial.export
+    - financial.invoicing
+    - financial.payment.plans
+    - hosting.cloud
+    - marketing.communication
+    - marketing.email.alerts
+    - marketing.mail.merge
+    - marketing.marketing
+    - marketing.sms.functionalit
+    - marketing.survey
+    - marketing.relationships
+    - staff.hr
+    - staff.training
+    - staff.task.management
+    - staff.templates
+    - staff.document.management
+    - version.control
+    - staff.lms 
+    - financial.online.payments
+    - students.portal
+    - students.assessment
+    - timetables.calendars
+    - timetables.rooms
+    - timetables.sites
+    - tutors.portal
+    - tutors.assessment
+    - tutors.cloud.assess
+    - website.cms
+  reporting:
+    - CSV
+    - PDF
+  pricing: Not listed on website
+  pros: |
+    - Some website integration
+    - Online assessment submission
+    - Tutor portal 
+    - Calendar functions 
+  cons: |
+    - No online payments
+    - No payroll functionality
+  oncourse: |
+    - Seamless and secure online payments
+    - Easy to manage payroll
+
+- name: BA Advantage
+  features:
+    - compliance.states
+    - compliance.avetmiss
+    - compliance.reporting.general
+    - compliance.rto.management
+    - compliance.usi.capible
+    - compliance.certificate
+    - costs.users
+    - financial.vouchers
+    - financial.invoicing
+    - financial.payment.plans
+    - hosting.cloud
+    - marketing.email.alerts
+    - marketing.sms.functionalit
+    - marketing.survey
+    - marketing.product
+    - staff.document.management
+    - version.control
+    - staff.lms
+    - students.portal
+    - support.phone.online
+    - timetables.calendars
+    - timetables.rooms
+    - tutors.portal
+    - financial.online.payments
+  reporting:
+  pricing: from $82 per month
+  pros: |
+    - Document management and version control
+    - Online payments
+    - Tutor portal
+    - Certificate issuing and automation
+  cons: |
+    - Limited financial and marketing features
+    - No website integration
+    - Unable to schedule reports
+  oncourse: |
+    - Absolute website integration for courses and classes
+    - Advanced financial and marketing features 
+    - Full customisation and scheduling of reports
+
+- name: BluegemEXPLORE
+  features:
+    - compliance.states
+    - compliance.avetmiss
+    - compliance.reporting.general
+    - compliance.reporting.customise
+    - compliance.rto.management
+    - compliance.usi.capible
+    - compliance.certificate
+    - compliance.cricos
+    - compliance.vetfee
+    - financial.discounting
+    - hosting.cloud
+    - marketing.survey
+    - staff.hr
+    - staff.task.management
+    - staff.templates
+    - staff.lms
+    - students.portal
+    - students.assessment
+    - support.phone.online
+    - timetables.sites
+    - tutors.portal
+    - tutors.assessment
+    - website.website
+    - website.cms
+  reporting:
+  pricing: Not listed on website
+  pros: |
+    - Tutor and student portals
+    - Task management
+    - Online assessment submission
+    - Website integration
+  cons: |
+    - Limited financial and marketing features
+    - No online payments
+    - Lots of add ons for it to be fully functional 
+  oncourse: |
+    - Advanced financial and marketing features 
+    - Seamless and secure online payments
+    - Functional at the free version
+
+- name: Capabiliti
+  features:
+    - compliance.states
+    - compliance.avetmiss
+    - compliance.reporting.general
+    - compliance.reporting.customise
+    - compliance.attendance
+    - hosting.cloud
+    - marketing.email.alerts
+    - marketing.marketing
+    - marketing.survey
+    - staff.employee
+    - staff.training
+    - staff.lms
+    - students.portal
+    - support.phone.online
+    - timetables.max.class
+  reporting:
+    - Excel
+    - CSV
+  pricing: from $1449 per month
+  pros: |
+    - Student portal
+    - Focus on staff training
+    - Online attendance marking
+  cons: |
+    - High ongoing costs
+    - No financial features
+    - No website integration
+    - Focus on staff training
+  oncourse: |
+    - Absolute website integration for courses and classes
+    - Advanced financial features 
+    - Student focussed
+    - Various pricing options
+
+- name: ChalkPort LearnCentre 
+  features:
+    - compliance.states
+    - compliance.avetmiss
+    - compliance.reporting.general
+    - compliance.rto.management
+    - costs.users
+    - hosting.cloud
+    - marketing.survey
+    - staff.document.management
+    - version.control
+    - staff.lms
+    - support.phone.online
+  reporting:
+  pricing: from $330 per month plus $2750 setup
+  pros: |
+    - Document management and version control
+    - Unlimited users
+  cons: |
+    - High setup costs
+    - No financial features
+    - No website integration or online payments
+  oncourse: |
+    - Absolute website integration for courses and classes
+    - Advanced financial features 
+    - Various pricing options 
+
+- name: CourseSales.com
+  features:
+    - compliance.states
+    - compliance.avetmiss
+    - compliance.reporting.general
+    - compliance.reporting.customise
+    - compliance.usi.capible
+    - compliance.certificate
+    - costs.free
+    - financial.discounting
+    - financial.currency
+    - financial.invoicing
+    - marketing.communication
+    - timetables.sites
+    - financial.online.payments
+  reporting:
+    - Excel
+    - Open Office
+  pricing: Not listed on website
+  pros: |
+    - Certificate issuing and automation
+    - Free version available
+    - Online payment
+  cons: |
+    - Limited financial and marketing features
+    - No Student or Tutor portals
+    - No website integration 
+  oncourse: |
+    - Absolute website integration for courses and classes
+    - Advanced financial and marketing features 
+    - Fully integrated student and tutor portals
+
+- name: eBECAS
+  features:
+    - compliance.states
+    - compliance.avetmiss
+    - compliance.reporting.general
+    - compliance.usi.capible
+    - compliance.certificate
+    - compliance.attendance
+    - financial.discounting
+    - financial.invoicing
+    - financial.payroll
+    - hosting.cloud
+    - marketing.communication
+    - marketing.marketing
+    - marketing.sms.functionalit
+    - staff.templates
+    - staff.document.management
+    - students.portal
+    - timetables.rooms
+  reporting:
+  pricing: from $250 per month plus $2000 setup
+  pros: |
+    - Certificate issuing and automation
+    - Document management
+    - Student portal
+    - Online attendance marking
+  cons: |
+    - High setup costs
+    - No website integration
+    - Limited financial and marketing features
+  oncourse: |
+    - Absolute website integration for courses and classes
+    - Advanced financial and marketing features 
+    - Various pricing options 
+
+- name: EduPoint
+  features:
+    - compliance.states
+    - compliance.avetmiss
+    - compliance.reporting.general
+    - compliance.reporting.customise
+    - compliance.certificate
+    - compliance.attendance
+    - compliance.cricos
+    - compliance.vetfee
+    - financial.accounting
+    - financial.currency
+    - financial.invoicing
+    - hosting.cloud
+    - marketing.communication
+    - marketing.marketing
+    - staff.document.management
+    - staff.lms
+    - students.portal
+    - support.phone.online
+    - website.website
+  reporting:
+  pricing: from $250 per month
+  pros: |
+    - Certificate issuing and automation
+    - Online attendance marking
+    - Document Management
+    - Website
+  cons: |
+    - Limited financial and marketing features
+    - No website integration
+    - No tutor portal
+  oncourse: |
+    - Absolute website integration for courses and classes
+    - Advanced financial and marketing features 
+    - Fully integrated tutor portal
+
+- name: Enquiry Mate for Trainers
+  features:
+    - compliance.states
+    - compliance.avetmiss
+    - compliance.reporting.general
+    - compliance.rto.management
+    - compliance.usi.capible
+    - compliance.asqa
+    - compliance.certificate
+    - compliance.attendance
+    - compliance.vetfee
+    - financial.accounting
+    - financial.export
+    - financial.invoicing
+    - financial.payment.plans
+    - hosting.local
+    - marketing.communication
+    - marketing.email.alerts
+    - marketing.mail.merge
+    - marketing.marketing
+    - marketing.survey
+    - marketing.memberships
+    - marketing.mailinglists
+    - staff.document.management
+    - staff.lms
+    - students.assessment
+    - support.phone.online
+    - timetables.rooms
+    - timetables.sites
+    - tutors.assessment
+    - website.cms
+  reporting:
+  pricing: from $300 per month 
+  pros: |
+    - Certificate issuing and automation
+    - Online attendance marking
+    - Document management
+    - Online assessment submission
+    - Website integration
+  cons: |
+    - High setup costs
+    - Local hosting only
+    - No customisation of reports
+    - Limited financial features
+  oncourse: |
+    - Advanced financial features 
+    - Various pricing options 
+    - Local or cloud hosting
+    - Full customisation and scheduling of reports
+
+- name: Esystats
+  features:
+    - compliance.avetmiss
+    - compliance.reporting.general
+    - compliance.usi.capible
+    - hosting.local
+    - staff.templates
+    - support.phone.online
+  reporting: 
+    - Excel 
+  pricing: from $390 per year
+  pros: |
+    - Low setup and ongoing costs
+    - Payroll
+  cons: |
+    - Only AVETMISS compliant in Victoria
+    - No financial or marketing features
+  oncourse: |
+    - AVETMISS Compliant nationally
+    - Advanced financial and marketing features 
+
+- name: FRONTDESK Enrol
+  features:
+    - compliance.avetmiss
+    - compliance.reporting.general
+    - compliance.attendance
+    - financial.budgeting
+    - financial.invoicing
+    - financial.payroll
+    - hosting.cloud
+    - timetables.rooms
+    - timetables.sites
+    - timetables.max.class
+  reporting:
+    - Excel
+  pricing: from $275 per month 
+  pros: |
+    - Online attendance marking
+    - Allows for rooms, sites and maximum clas sizes
+  cons: |
+    - Only AVETMISS compliant in New South Wales, Tasmania and Victoria
+    - No marketing features
+    - No student or tutor portals
+  oncourse: |
+    - AVETMISS Compliant nationally
+    - Advanced marketing features 
+    - Fully integrated student and tutor portals
+
+- name: Icare
+  features:
+    - compliance.states
+    - compliance.avetmiss
+    - compliance.reporting.general
+    - compliance.certificate
+    - compliance.attendance
+    - financial.invoicing
+    - hosting.local
+    - staff.bulk.assign
+    - staff.templates
+  reporting:
+  pricing: from $85 per month plus $2970 setup
+  pros: |
+    - Certificate issuing and automation
+    - Online attendance marking
+    - Small ongoing monthly fee
+  cons: |
+    - Large setup costs
+    - Minimal finance features
+    - No marketing features
+  oncourse: |
+    - Advanced financial and marketing features 
+    - Various pricing options
+    - Advanced marketing features
+
+- name: JobReady.RTO
+  features:
+    - compliance.states
+    - compliance.avetmiss
+    - compliance.reporting.general
+    - compliance.reporting.customise
+    - compliance.rto.management
+    - compliance.usi.capible
+    - compliance.asqa
+    - compliance.certificate
+    - compliance.attendance
+    - compliance.vetfee
+    - financial.accounting
+    - financial.debtors
+    - financial.export
+    - financial.invoicing
+    - financial.payment.plans
+    - hosting.cloud
+    - marketing.communication
+    - marketing.email.alerts
+    - marketing.marketing
+    - marketing.sms.functionalit
+    - marketing.crm
+    - staff.task.management
+    - staff.templates
+    - staff.document.management
+    - staff.lms
+    - students.portal
+    - students.assessment
+    - support.phone.online
+    - timetables.calendars
+    - timetables.rooms
+    - timetables.sites
+    - tutors.portal
+    - tutors.assessment
+    - financial.online.payments
+  reporting: 
+  - Excel
+  pricing: Not listed on website
+  pros: |
+    - Strong traineeship functionality
+    - Job network integration
+    - Report customisation
+    - Certificate issuing and automation
+    - Online attendance marking
+  cons: |
+    - No website integration
+    - No CRICOS Management
+    - No payroll
+  oncourse: |
+    - Absolute website integration for courses and classes
+    - Easy to manage payroll
+    - Fully CRICOS compliant 
+
+- name: Kurious
+  features:
+    - compliance.states
+    - compliance.avetmiss
+    - compliance.reporting.general
+    - compliance.rto.management
+    - hosting.cloud
+    - staff.multi.os
+    - staff.hr
+    - staff.task.management
+    - staff.lms
+    - students.portal
+    - support.phone.online
+    - timetables.calendars
+    - timetables.rooms
+    - tutors.portal
+    - financial.online.payments
+  reporting:
+  pricing: Not listed on website
+  pros: |
+    - Multi OS functionality
+    - Task management 
+  cons: |
+    - No website integration
+    - No online payments
+    - No student or tutor portals
+  oncourse: |
+    - Absolute website integration for courses and classes
+    - Fully integrated student and tutor portals
+    - Seamless and secure online payments
+
+- name: Maze
+  features:
+    - compliance.states
+    - compliance.avetmiss
+    - compliance.reporting.general
+    - compliance.reporting.customise
+    - compliance.attendance
+    - financial.accounting
+    - financial.debtors
+    - financial.export
+    - financial.invoicing
+    - financial.payment.plans
+    - financial.payroll
+    - hosting.cloud
+    - marketing.mail.merge
+    - marketing.marketing
+    - marketing.sms.functionalit
+    - staff.hr
+    - staff.payroll
+    - staff.training
+    - staff.document.management
+    - staff.related.find
+    - students.portal
+    - support.phone.online
+    - timetables.calendars
+    - timetables.rooms
+    - tutors.portal
+    - financial.online.payments
+  reporting:
+    - Excel
+    - Word
+  pricing: from $125 per month
+  pros: |
+    - Reporting customisation
+    - Online attendance marking
+    - Online payments
+    - Payroll
+    - Document management
+  cons: |
+    - Unable to customise outgoing communications
+    - No webite integration
+    - No version control
+  oncourse: |
+    - Absolute website integration for courses and classes
+    - Seamless and secure online payments
+    - Optomised version control
+
+- name: N-Rolls Gold
+  features:
+    - compliance.avetmiss
+    - compliance.reporting.general
+    - compliance.reporting.customise
+    - compliance.certificate
+    - financial.invoicing
+  reporting:
+  pricing: from $20 per month plus $1599 setup
+  pros: |
+    - Low ongoing costs
+    - Certificate issuing and automation
+    - Invoicing
+  cons: |
+    - Only AVETMISS compliant in Queensland, Victoria and Western Australia
+    - Not USI capible
+    - No marking features
+    - No website integration
+  oncourse: |
+    - Absolute website integration for courses and classes
+    - AVETMISS Compliant nationally
+    - Advanced marketing features 
+    - Fully USI capible 
+
+- name: PowerPro RTO
+  features:
+    - compliance.states
+    - compliance.avetmiss
+    - compliance.reporting.general
+    - compliance.reporting.customise
+    - compliance.usi.capible
+    - compliance.attendance
+    - compliance.cricos
+    - compliance.vetfee
+    - financial.accounting
+    - financial.invoicing
+    - financial.payment.plans
+    - marketing.email.alerts
+    - marketing.mail.merge
+    - marketing.sms.functionalit
+    - marketing.survey
+    - staff.document.management
+    - support.phone.online
+    - timetables.calendars
+    - timetables.rooms
+    - timetables.sites
+    - website.cms
+    - financial.online.payments
+  reporting:
+  pricing: $3100 setup
+  pros: |
+    - Online attendance marking
+    - Document Management
+    - Calendar functionality
+    - Online payments
+    - Some website integration
+  cons: | 
+    - Large setup fee
+    - No tutor or student portals 
+    - Limited finalcial and marketing features
+  oncourse: |
+    - Advanced financial and marketing features 
+    - Fully integrated student and tutor portals
+    - Various pricing options
+
+- name: RTO Data
+  features:
+    - compliance.states
+    - compliance.avetmiss
+    - compliance.reporting.general
+    - compliance.reporting.customise
+    - compliance.rto.management
+    - compliance.certificate
+    - compliance.vetfee
+    - costs.users
+    - financial.payment.plans
+    - hosting.local
+    - marketing.mail.merge
+    - staff.employee
+    - staff.hr
+    - staff.task.management
+    - staff.document.management
+    - version.control
+    - timetables.rooms
+    - timetables.sites
+    - website.website
+  reporting:
+  pricing: from $60 per month plus $3300 setup
+  pros: |
+    - Certificate issuing and automation
+    - Low monthly charge
+    - Payment plans
+    - Website
+  cons: |
+    - Large setup fee
+    - Limited financial and marketing features
+    - No tutor or student portal
+    - No website integration
+  oncourse: |
+    - Absolute website integration for courses and classes
+    - Advanced financial and marketing features 
+    - Fully integrated student and tutor portals
+    - Various pricing options
+
+- name: RTOManager
+  features:
+    - compliance.states
+    - compliance.avetmiss
+    - compliance.reporting.general
+    - compliance.reporting.customise
+    - compliance.rto.management
+    - compliance.usi.capible
+    - compliance.certificate
+    - compliance.attendance
+    - compliance.cricos
+    - compliance.vetfee
+    - financial.accounting
+    - financial.export
+    - financial.invoicing
+    - financial.payment.plans
+    - financial.payroll
+    - hosting.cloud
+    - marketing.communication
+    - marketing.email.alerts
+    - marketing.mail.merge
+    - marketing.marketing
+    - marketing.sms.functionalit
+    - marketing.survey
+    - marketing.mailinglists
+    - staff.hr
+    - staff.training
+    - staff.task.management
+    - staff.templates
+    - staff.document.management
+    - version.control
+    - staff.lms
+    - students.portal
+    - students.assessment
+    - support.phone.online
+    - timetables.rooms
+    - timetables.sites
+    - tutors.portal
+    - tutors.assessment
+    - financial.online.payments
+  reporting:
+  pricing: Not listed on website
+  pros: |
+    - Certificate issuing and automation
+    - Online attendance marking
+    - Survey integration and customised communications
+    - Tutor and student portals
+    - Online assessment submission
+    - Online payments
+  cons: |
+    - No payroll
+    - No webite integration
+    - No budgeting features
+    - No calendar functionality
+  oncourse: |
+    - Absolute website integration for courses and classes
+    - Easy to manage payroll
+    - Scheduling and calendar functionality
+    - Advanced financial features 
+
+- name: Strata
+  features:
+    - compliance.states
+    - compliance.avetmiss
+    - compliance.reporting.general
+    - compliance.reporting.customise
+    - compliance.usi.capible
+    - compliance.attendance
+    - financial.invoicing
+    - hosting.cloud
+    - hosting.local
+    - staff.bulk.assign
+    - staff.document.management
+    - students.portal
+    - timetables.sites
+  reporting:
+    - Excel
+  pricing: Not listed on website
+  pros: |
+    - Online attendance marking
+    - Cloud and local hosting
+    - Document management
+    - Student portal
+  cons: |
+    - Minimul financial and marketing features
+    - No version control
+    - No website integration
+  oncourse: |
+    - Absolute website integration for courses and classes
+    - Advanced financial and marketing features 
+    - Optomised version control
+
+- name: Student Management SmartGuide
+  features:
+    - compliance.states
+    - compliance.avetmiss
+    - compliance.reporting.general
+    - compliance.reporting.customise
+    - compliance.usi.capible
+    - compliance.certificate
+    - compliance.attendance
+    - compliance.cricos
+    - financial.debtors
+    - financial.invoicing
+    - financial.payment.plans
+    - hosting.local
+    - staff.templates
+    - staff.document.management
+    - support.phone.online
+    - timetables.rooms
+  reporting:
+  pricing: $1000 setup
+  pros: |
+    - Certificate issuing and automation
+    - Online attendance marking
+    - Invoicing and debtors reporting
+    - Document management
+    - Provides coourse templates
+  cons: |
+    - No marketing features
+    - No version control
+    - No website integration
+    - No student or tutor portal
+  oncourse: |
+    - Absolute website integration for courses and classes
+    - Advanced marketing features 
+    - Fully integrated student and tutor portals
+    - Optomised version control
+
+- name: TEAMS
+  features:
+    - compliance.states
+    - compliance.reporting.general
+    - compliance.rto.management
+    - compliance.usi.capible
+    - compliance.attendance
+    - compliance.cricos
+    - financial.debtors
+    - financial.export
+    - financial.invoicing
+    - financial.payment.plans
+    - marketing.mail.merge
+    - marketing.marketing
+    - marketing.sms.functionalit
+    - marketing.survey
+    - staff.templates
+    - staff.document.management
+    - students.portal
+    - support.phone.online
+    - timetables.sites
+    - tutors.portal
+  reporting:
+  pricing: from $295 per month and $2500 setup
+  pros: |
+    - Online attendance marking
+    - Invoicing, payment plans and debtors reporting
+    - Document management
+    - Student and tutor portals
+  cons: |
+    - Large setup costs
+    - Unable to customise communications
+    - No version control
+    - No website integration or online payments
+  oncourse: |
+    - Absolute website integration for courses and classes
+    - Optomised version control
+    - Various pricing options
+
+- name: Truss RTO
+  features:
+    - compliance.states
+    - compliance.avetmiss
+    - compliance.reporting.general
+    - compliance.usi.capible
+    - compliance.certificate
+    - financial.accounting
+    - financial.debtors
+    - financial.export
+    - financial.invoicing
+    - financial.payment.plans
+    - hosting.cloud
+    - staff.multi.os
+    - marketing.communication
+    - marketing.email.alerts
+    - marketing.mail.merge
+    - marketing.marketing
+    - marketing.sms.functionalit
+    - marketing.survey
+    - staff.templates
+    - staff.document.management
+    - support.phone.online
+    - timetables.calendars
+    - timetables.rooms
+    - timetables.sites
+    - tutors.portal
+    - website.website
+    - website.cms
+    - financial.online.payments
+  reporting:
+  pricing: from $299 per month and $7995 setup
+  pros: |
+    - Certificate issuing and automation
+    - Multi OS functionality
+    - Invoicing, payment plans and debtors reporting
+    - Document management
+    - Calendar functionality
+    - Online Payments and website integration
+  cons: |
+    - Large setup costs
+    - No version control
+    - No budgeting functionality
+    - No reporting customisation
+  oncourse: |
+    - Full customisation and scheduling of reports
+    - Optomised version control
+    - Various pricing options
+    - Advanced financial features 
+
+- name: tutis
+  features:
+    - compliance.states
+    - compliance.avetmiss
+    - compliance.reporting.general
+    - compliance.rto.management
+    - compliance.attendance
+    - compliance.vetfee
+    - costs.users
+    - hosting.cloud
+    - staff.multi.os
+    - marketing.communication
+    - marketing.email.alerts
+    - marketing.survey
+    - marketing.crm
+    - staff.templates
+    - staff.document.management
+    - staff.lms
+    - students.assessment
+    - support.phone.online
+    - timetables.calendars
+    - timetables.rooms
+    - timetables.sites
+    - tutors.assessment
+    - financial.online.payments
+  reporting:
+  pricing: Not listed on website
+  pros: |
+    - Online attendance marking
+    - Unlimited users
+    - Multi OS functionality
+    - Survey integration
+    - Document management
+    - Online assessment submission
+  cons: |
+    - No financial features
+    - No version control
+    - No student or tutor portals
+    - No website integration
+  oncourse: |
+    - Absolute website integration for courses and classes
+    - Advanced financial features 
+    - Fully integrated student and tutor portals
+    - Optomised version control
+
+- name: VETtrak
+  features:
+    - compliance.states
+    - compliance.avetmiss
+    - compliance.reporting.general
+    - compliance.reporting.customise
+    - compliance.rto.management
+    - compliance.usi.capible
+    - compliance.certificate
+    - compliance.attendance
+    - compliance.vetfee
+    - financial.invoicing
+    - financial.payment.plans
+    - hosting.cloud
+    - hosting.local
+    - marketing.communication
+    - marketing.email.alerts
+    - marketing.mail.merge
+    - marketing.sms.functionalit
+    - marketing.relationships
+    - marketing.mailinglists
+    - marketing.waitinglists
+    - staff.employee
+    - staff.hr
+    - staff.training
+    - staff.lms
+    - students.portal
+    - support.phone.online
+    - timetables.rooms
+    - timetables.sites
+    - tutors.portal
+  platform: Windows
+  reporting: 
+  pricing: from $90 per month
+  pros: |
+    - Comprehensive compliant reporting
+    - Low monthly costs
+    - Cloud and local hosting
+    - Tutor and student portals 
+    - Online assessment submission
+  cons: |
+    - Basic marketing and financial features
+    - No website integration
+    - No online payments 
+  oncourse: |
+    - Absolute website integration for courses and classes
+    - Advanced financial and marketing features 
+    - Seamless and secure online payments
+
+- name: Wise.NET
+  features:
+    - compliance.states
+    - compliance.avetmiss
+    - compliance.reporting.general
+    - compliance.reporting.customise
+    - compliance.usi.capible
+    - compliance.attendance
+    - compliance.cricos
+    - compliance.vetfee
+    - financial.invoicing
+    - hosting.cloud
+    - marketing.communication
+    - marketing.email.alerts
+    - marketing.mail.merge
+    - marketing.sms.functionalit
+    - marketing.survey
+    - staff.task.management
+    - staff.bulk.assign
+    - staff.templates
+    - staff.document.management
+    - students.portal
+    - support.phone.online
+    - timetables.calendars
+    - timetables.rooms
+    - timetables.sites
+    - tutors.portal
+    - tutors.cloud.assess
+    - financial.online.payments
+  reporting: 
+  pricing: from $90 per month 
+  pros: |
+    - Online attendance marking
+    - Low monthly costs
+    - Invoicing
+    - Document management
+    - Task management 
+    - Student and Tutor portals 
+    - Online assessment submission
+  cons: |
+    - Minimul financial features
+    - No debtors reporting
+    - No website integration
+    - No version control
+  oncourse: |
+    - Absolute website integration for courses and classes
+    - Advanced financial features 
+    - Full customisation and scheduling of reports
+    - Optomised version control
+
+- name: Tribal Campus (including Tribal Pepi)
+  features:
+    - compliance.states
+    - compliance.avetmiss
+    - compliance.reporting.general
+    - compliance.attendance
+    - financial.debtors
+    - financial.invoicing
+    - marketing.survey
+    - staff.templates
+    - staff.document.management
+    - students.portal
+    - students.assessment
+    - tutors.portal
+  reporting:
+  pricing: Not listed on website
+  pros: |
+    - Online attendance marking
+    - Invoicing and debtors reporting
+    - Document management
+    - Online assessment submission
+    - Student and tutor portal
+  cons: |
+    - Minimal financial and marketing features
+    - No version control
+    - No calendar features
+    - No website integration
+    - No online payments
+  oncourse: |
+    - Absolute website integration for courses and classes
+    - Advanced financial and marketing features 
+    - Seamless and secure online payments
+    - Optomised version control
+
+- name: Tribal Callista
+  features:
+    - compliance.states
+    - compliance.avetmiss
+    - compliance.reporting.general
+    - compliance.reporting.customise
+    - compliance.attendance
+    - compliance.cricos
+    - compliance.vetfee
+    - financial.invoicing
+    - financial.payment.plans
+    - hosting.cloud
+    - marketing.communication
+    - marketing.email.alerts
+    - marketing.sms.functionalit
+    - marketing.crm
+    - marketing.mailinglists
+    - students.portal
+    - students.assessment
+    - timetables.calendars
+    - timetables.sites
+    - financial.online.payments
+  reporting:
+  pricing: Not listed on website
+  pros: |
+    - Online attendance marking
+    - Invoicing and payment plans
+    - Customised communications, mailing lists and sms functionality
+    - Student portal
+    - Online assessment submission
+    - Online payment
+  cons: |
+    - Basic financial features
+    - No tutor portal 
+    - No website integration
+  oncourse: |
+    - Absolute website integration for courses and classes
+    - Advanced financial features 
+    - Fully integrated tutor portal
+
+- name: Weworkbook
+  features:
+    - compliance.states
+    - compliance.avetmiss
+    - compliance.reporting.general
+    - compliance.usi.capible
+    - hosting.cloud
+    - timetables.rooms
+    - timetables.sites
+  reporting:
+  pricing: from $440 per month 
+  pros: |
+    - Rooms and sites
+    - USI Capible 
+  cons: |
+    - No marketing or financial features
+    - No website integration
+    - No online payments
+  oncourse: |
+    - Absolute website integration for courses and classes
+    - Advanced financial and marketing features 
+    - Seamless and secure online payments
+
+
+- name: OneEducation
+  features:
+    - compliance.reporting.general
+    - financial.budgeting
+    - financial.invoicing
+    - financial.payroll
+    - hosting.cloud
+    - staff.multi.os
+    - staff.employee
+    - staff.hr
+    - staff.payroll
+    - staff.training
+    - staff.document.management
+    - students.portal
+    - support.phone.online
+    - timetables.calendars
+  reporting:
+  pricing:  
+  pros: |
+    - International company
+    - Budgeting
+    - HR/ Staff focussed
+  cons: |
+    - No marketing features
+    - No version control
+    - No website integration
+  oncourse: |
+    - Absolute website integration for courses and classes
+    - Advanced marketing features 
+    - Optomised version control

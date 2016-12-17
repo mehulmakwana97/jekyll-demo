@@ -1,0 +1,339 @@
+/**
+*
+* pricing.scss
+*
+* Contains styles of pricing table
+*/
+
+$highlighted-color: #13bf9d;
+$price-background: #f79d67;
+
+$plans: #4a9fda #13bf9d #f7941d #eb6b71;
+
+.post-content .pricing-top-action p {
+    margin-bottom: 0;
+}
+
+.pricing-container .row-item.row-details .col-price.col-item-1,
+.pricing-container .row-item.row-details .col-price.col-item-2,
+.pricing-container .row-item.row-details .col-price.col-item-3,
+.pricing-container .row-item.row-details .col-price.col-item-4 {
+    background-color: $white;
+    border-top: 1px solid rgba(0,0,0,0.06);
+}
+
+.pricing-container .row-item.row-details .col-price.col-item-2 {
+    background-color: #13bf9d;
+    color: #fff;
+}
+
+.pricing-container .row-item.row-details .col-price.col-item-2 .has-no-plan {
+    color: #fff;
+    @include opacity(0.5)
+}
+
+.pricing-container .row-item.row-action .col-price {
+    background-color: $white;
+    border-bottom: 1px solid rgba(0,0,0,0.06);
+    border-radius: 0 0 5px 5px;
+    padding: 40px 0 50px;
+
+    &.col-item-1 {
+       .btn-secondary {
+            color: #4a9fda;
+            background-color: #fff;
+            border-color: #4a9fda;
+
+            &:hover {
+                color: #2987c8;
+                border-color: #2987c8; 
+            }
+        } 
+
+        .btn-primary {
+            background-color: #4a9fda;
+            border-color: #4a9fda;
+
+            &:hover {
+                background-color: darken(#4a9fda, 10%);
+                border-color: darken(#4a9fda, 10%);
+            }
+        }
+    }
+
+    &.col-item-2 {
+        background-color: #13bf9d;
+
+        .btn-primary {
+            background-color: #0e9177;
+            border-color: #0e9177;
+
+            &:hover {
+                background-color: darken(#0e9177, 10%);
+                border-color: darken(#0e9177, 10%);
+            }
+        } 
+    }
+
+    &.col-item-3 {
+       .btn-primary {
+            background-color: #f7941d;
+            border-color: #f7941d;
+
+            &:hover {
+                background-color: #d97a08;
+                border-color: #d97a08; 
+            }
+        } 
+    }
+
+    &.col-item-4 {
+       .btn-primary {
+            background-color: #eb6b71;
+            border-color: #eb6b71;
+
+            &:hover {
+                background-color: #e53e46;
+                border-color: #e53e46; 
+            }
+        } 
+    }
+}
+
+.info-text {
+    display: inline-block;
+    width: auto;
+    padding: 10px 12px 0;
+}
+
+.glyphicon {
+    &.glyphicon-chevron-down, &.glyphicon-chevron-up {
+        position: absolute;
+        top: 8px;
+        right: 10px;
+        cursor: pointer;
+    }
+
+    .col-item-1 & {
+        color: #4a9fda;
+    }
+
+    .col-item-3 & {
+        color: #f7941d;
+    }
+
+    .col-item-4 & {
+        color: #eb6b71;
+    }
+}
+
+%common-price-rate {
+    .price-rate, .price-rate-annual {
+        display: inline-block;
+        height: auto !important;
+        font-size: 14px;
+        @include responsive($media-xsmall) {
+            font-size: 40px;
+        }
+    }
+    .price {
+        height: 72px;
+        overflow: hidden;
+    }
+    .price-rate {
+        display: none;
+    }
+    .col-label {
+        background: darken($highlighted-color, 10%);
+        border-radius: 5px 5px 0 0;
+        margin-bottom: 10px;
+        padding: 5px 0;
+        @include responsive($media-xsmall) {
+            font-size: 13px;
+            font-weight: normal;
+        }
+    }
+}
+
+.pricing-container {
+    .row-item {
+        width: 100%;
+        display: table;
+        margin: 0;
+        .col-price {
+            position: relative;
+            vertical-align: top;
+            text-align: center;
+            border-left: 2px solid #fbf9f0;
+            padding: 10px 6px;
+            word-break: break-word;
+            display: table-cell;
+            float: none;
+            @include responsive($media-xsmall) {
+                word-break: initial;
+            }
+        }
+        &.row-simple-text {
+            .col-price {
+                font-size: 14px;
+                line-height: 1.4em;
+                padding: 0 0 20px;
+                vertical-align: bottom;
+            }
+        }
+
+        &.row-price-block {
+            .col-price {
+                padding: 0px 0 8px 0;
+                background: $price-background;
+                color: $white;
+                vertical-align: bottom;
+                border-radius: 5px 5px 0 0;
+                @include responsive($media-xsmall) {
+                    padding: 0px 0 20px 0;
+                }
+                @each $plan in $plans {
+                    $i: index($plans, $plan);
+                    &.col-item-#{$i} {
+                        background: $plan;
+                        .col-label {
+                            background: darken($plan, 10%);
+                        }
+                    }
+                }
+                >span {
+                    display: block;
+                }
+                @extend %common-price-rate;
+                .col-text {
+                    font-size: 11.2px;
+                }
+                &.item-highlight {
+                    background: #13bf9d;
+                    .col-label {
+                        background: darken(#13bf9d, 10%);
+                        position: relative;
+                        top: -12px;
+                    }
+                    .price-rate, .price-rate-annual {
+                        font-size: 19px;
+                        line-height: 1.42;
+                        @include responsive($media-xsmall) {
+                            font-size: 38px;
+                        }
+                    }
+                }
+            }
+        }
+        &.row-details {
+            .col-price {
+                padding-right: 12px;
+                @include responsive($media-xsmall) {
+                    padding-right: 30px;
+                }
+                .col-desc {
+                    cursor: pointer;
+                    display: block;
+                    font-size: 14px;
+                    line-height: 1.5em;
+                    .glyphicon-chevron-down, .glyphicon-chevron-up {
+                        top: 14px;
+                    }
+                }
+            }
+        }
+    }
+
+    .plan-details {
+        display: none;
+        font-size: 0.8em;
+        line-height: 1.4em;
+        margin-top: 10px;
+        padding-left: 18px;
+        margin-bottom: 5px;
+    }
+
+    .has-no-plan {
+        cursor: auto;
+        color: lighten($text-color, 50%);
+        text-decoration: line-through;
+        .glyphicon {
+            display: none;
+        }
+    }
+    @extend %common-price-rate;
+}
+
+.pricing-calculation {
+    padding: 80px 15px 40px;
+
+    #pricing-in-slider {
+        margin-bottom: 15px;
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .price-panel {
+        background-color: #fff;
+        border: 1px solid rgba(0,0,0,0.06);
+        border-radius: 5px 5px 0 0;
+
+        .panel-heading {
+            background: $black;
+            color: $white;
+            padding: 0px 0 20px;
+            border-bottom: 1px solid #ddd;
+            text-align: center;
+            font-size: 12px;
+            border-radius: 5px 5px 0 0;
+
+            h5, p {
+                margin: 0px;
+            }
+
+            .col-label {
+                background: lighten($black, 15%);
+            }
+        }
+        .panel-body {
+            padding: 15px;
+        }
+    }
+}
+
+.plans-support {
+    >.row {
+        @include responsive($media-xsmall) {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .plans-support-item {
+            @include responsive($media-xsmall) {
+                flex: 0 0 50%;
+                margin-bottom: 30px;
+            }
+            @include responsive($media-tablet) {
+                flex: 0 0 33.33%;
+            }
+        }
+    }
+
+    .plans-image {
+        border-radius: 5px;
+        margin-bottom: 25px;
+    }
+
+    .plans-title {
+        line-height: 1.3em;
+        margin-bottom: 20px;
+    }
+
+    .plans-desc {
+        line-height: 1.4em;
+    }
+
+    .icon-plans {
+        max-width: 30px;
+        max-height: 30px;
+    }
+}
